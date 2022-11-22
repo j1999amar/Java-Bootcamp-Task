@@ -14,8 +14,9 @@ public class Main {
             System.out.println("Student App");
             System.out.println("1 : Add Student\n" +
                     "2 : View Student\n" +
-                    "3 : Search the Student\n" +
-                    "4 : Delete the Student");
+                    "3 : Search the Student\n"+
+                    "4 : Delete the Student\n"+"" +
+                    "5 : Exit ");
             opt = sc.nextInt();
 
             switch (opt) {
@@ -84,7 +85,8 @@ public class Main {
 
                     }
                     studentArrayList.remove(s);
-
+                case 5:
+                    System.exit(0);
 
             }
         }
